@@ -42,6 +42,7 @@ graph TD
     D --> E[ML Model Predicts Emotion]
     E --> F[Send Response to ESP32]
     F --> G[Display on OLED]
+
 💻 Example Output
 makefile
 Kopyala
