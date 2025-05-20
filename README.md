@@ -35,7 +35,6 @@ This project aims to predict the emotional state of a user based on their heart 
 ## 📡 System Workflow
 
 ```mermaid
-
 graph TD
     A[MAX30100 Sensor] --> B[ESP32 Calculates Avg BPM]
     B --> C[Send Data via HTTP POST]
@@ -43,14 +42,12 @@ graph TD
     D --> E[ML Model Predicts Emotion]
     E --> F[Send Response to ESP32]
     F --> G[Display on OLED]
-
 💻 Example Output
 makefile
 Kopyala
 Düzenle
 Emotion: Happy
 BPM: 78.4
-
 📁 File Structure
 bash
 Kopyala
@@ -58,6 +55,3 @@ Düzenle
 /esp32-code       -> ESP32 Arduino source files
 /flask-server     -> Python Flask app and ML model
 README.md         -> Project description
-
-👤 Author
-Egemen Akdeniz
