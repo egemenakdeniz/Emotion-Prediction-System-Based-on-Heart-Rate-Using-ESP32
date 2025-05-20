@@ -35,6 +35,7 @@ This project aims to predict the emotional state of a user based on their heart 
 ## 📡 System Workflow
 
 ```mermaid
+
 graph TD
     A[MAX30100 Sensor] --> B[ESP32 Calculates Avg BPM]
     B --> C[Send Data via HTTP POST]
