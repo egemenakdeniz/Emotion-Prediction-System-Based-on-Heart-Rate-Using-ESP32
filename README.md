@@ -41,4 +41,11 @@ This project aims to predict the emotional state of a user based on their heart 
 5. The predicted emotion and BPM are displayed on the OLED screen.
 
 ## 💻 Example Output
+Emotion: Happy
+BPM: 78.4
 
+## 📁 File Structure
+
+/esp32-code -> ESP32 Arduino source files
+/flask-server -> Python Flask app and ML model
+README.md -> Project description
