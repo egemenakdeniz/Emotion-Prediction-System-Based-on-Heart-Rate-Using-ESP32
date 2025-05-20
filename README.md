@@ -32,27 +32,13 @@ This project aims to predict the emotional state of a user based on their heart 
 2. Make sure `heart_rate_emotion_model1.pkl` and `label_encoder1.pkl` are in the same directory.
 3. Use Render or similar platform to deploy the Flask app for cloud access.
 
-## 📡 System Workflow
+## 🔄 System Workflow Summary
 
-```mermaid
-graph TD
-    A[MAX30100 Sensor] --> B[ESP32 Calculates Avg BPM]
-    B --> C[Send Data via HTTP POST]
-    C --> D[Flask API]
-    D --> E[ML Model Predicts Emotion]
-    E --> F[Send Response to ESP32]
-    F --> G[Display on OLED]
+1. MAX30100 sensor measures heart rate.
+2. ESP32 calculates the average of 20 valid BPM values.
+3. ESP32 sends the data to the Flask API via HTTP POST.
+4. Flask uses a machine learning model to predict the emotion.
+5. The predicted emotion and BPM are displayed on the OLED screen.
 
-💻 Example Output
-makefile
-Kopyala
-Düzenle
-Emotion: Happy
-BPM: 78.4
-📁 File Structure
-bash
-Kopyala
-Düzenle
-/esp32-code       -> ESP32 Arduino source files
-/flask-server     -> Python Flask app and ML model
-README.md         -> Project description
+## 💻 Example Output
+
